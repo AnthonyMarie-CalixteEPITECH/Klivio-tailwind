@@ -13,21 +13,20 @@
             rel="stylesheet"
         >
     </head>
-    <body class="font-[Montserrat] m-0 p-0 border-0">
-            <!-- ----------------------------------------------  HEADER  ---------------------------------------------- -->
+    <body class="font-[Montserrat] text-[#152237] m-0 p-0 border-0">
 
-        <header class="bg-[#152237] flex h-[80px] text-white">
+        <header class="relative bg-[#152237] flex h-[80px] text-white">
             <img
                 class="w-[84px] h-[31px] my-auto mx-5"
                 src="tailwind/resources/assets/images/logo.png"
                 alt="Klivio Logo"
             >
-            <nav class="w-full flex flex-row justify-around items-center">
+            <nav class="relative w-full hidden lg:flex flex-row justify-around items-center ">
                 <p class="size-[15px] w-auto">Les formations</p>
                 <input
                     class="w-[36%] h-[50%] border-1 border-white p" 
                     name="search"
-                    type="text" 
+                    type="text"
                     placeholder="    Rechercher" >
                 <div class="flex w-25 justify-evenly">
                     <button class="h-[40px] w-[130px] rounded-[7px] cursor-pointer bg-linear-to-l from-[#44dd8a] to-[#15b7e2] text-black h-[40%]">Connexion</button>
@@ -35,51 +34,43 @@
                 </div>
             </nav>
             <img
-                class="hidden"
+                class="lg:hidden h-full absolute right-[5%] size-12 cursor-pointer"
                 src="tailwind/resources/assets/images/burger.svg"
                 alt="icone de burger menu"
                 
             >
         </header>
         <main>
-            <!-- ----------------------------------------------  BANNER  ---------------------------------------------- -->
-
-            <div class="">
-                <div class="w-[100%]"></div>
-                <div ></div>
-                <div >
-                    <h1>KLIVIO, l'ALLIE DE VOTRE PROGRESSION</h1>
-                    <h5>
+            <div class="h-[450px] bg-linear-to-l from-[#44dd8a] to-[#15b7e2]">
+                <div class="w-[50%] text-center items-center justify-self-center pt-[5%] bg-[../tailwind/resources/assets/images/avantages.png">
+                    <h1 class="font-[1000] text-4xl">KLIVIO, l'ALLIE DE VOTRE PROGRESSION</h1>
+                    <p class="font-thin">
                         LES MEILLEURES FORMATIONS SUR LE DEVELOPPEMENT PERSONNEL
-                    </h5>
-                    <button >En savoir plus</button>
+                    </p>
+                    <button class="mt-[5%] p-[1%] px-[5%] cursor-pointer text-white bg-teal-800 border-2 border-dashed border-amber-600 rounded-xl">En savoir plus</button>
                 </div>
             </div>
 
-        <!-- ----------------------------------------------  POPULAR  ---------------------------------------------- -->
-
-            <section >
-                <h2 >Les formations populaires</h2>
-                <div class="flex">
-                    <div >
-                        <img
+            <section class="text-center">
+                <h2 class="w-[90%] pt-[5%] pb-[5%] justify-self-center font-bold text-4xl underline italic">Les formations populaires</h2>
+                <div class="grid w-[90%] mx-auto gap-6 text-left lg:grid-cols-4 md:grid-cols-2 md:content-center sm:grid-cols-1">
+                    <div class="relative w-[305px] h-[362px] justify-self-center">
+                        <img class="mb-5"
                             src="tailwind/resources/assets/images/img-course.png"
                             alt="Fond vert clair uni"
                         >
-                        <h3>Parler en public</h3>
+                        <h3 class="font-bold text-xl">Parler en public</h3>
                         <p>Sonia Lefèvre | Coach prise de parole</p>
-                        <div >
-                            <h5>15,99 €</h5>
-                            <p>60 €</p>
+                        <div class="flex absolute bottom-[38%] right-[5%]  items-center bg-yellow-300  p-[1%] rounded-2xl">
+                            <p class="italic font-semibold pr-[5px]">15,99 €</p>
+                            <p class="line-through text-sm font-light">60 €</p>
                         </div>
-                        <div >
+                        <div class="flex flex-row max-w-[305px] max-h-[25px]">
                             <img
-                                
                                 src="tailwind/resources/assets/images/star.svg"
                                 alt="icone d'étoile"
                             >
                             <img
-                                
                                 src="tailwind/resources/assets/images/star.svg"
                                 alt="icone d'étoile"
                             >
@@ -101,18 +92,18 @@
                         </div>
                         <p>Gagnez en aisance et captez votre auditoire</p>
                     </div>
-                    <div >
-                        <img
+                    <div class="relative w-[305px] h-[362px] justify-self-center">
+                        <img class="mb-5"
                             src="tailwind/resources/assets/images/img-course.png"
                             alt="Fond vert clair uni"
                         >
-                        <h3>Gérer le stress</h3>
+                        <h3 class="font-bold text-xl">Gérer le stress</h3>
                         <p>Lucie Garnier | Formatrice</p>
-                        <div >
-                            <h5>15,99 €</h5>
-                            <p>60 €</p>
+                        <div class="absolute flex bottom-[38%] right-[5%] bg-yellow-300  p-[1%]  px-[10px] rounded-2xl">
+                            <p class="italic font-semibold pr-[5px]">15,99 €</p>
+                            <p class="line-through text-sm font-light">60 €</p>
                         </div>
-                        <div >
+                        <div  class="flex flex-row max-w-[305px] max-h-[25px]">
                             <img
                                 
                                 src="tailwind/resources/assets/images/star.svg"
@@ -141,18 +132,18 @@
                         </div>
                         <p>Apprenez à rester serein face aux défis</p>
                     </div>
-                    <div >
-                        <img
+                    <div class="relative w-[305px] h-[362px] justify-self-center">
+                        <img class="mb-5"
                             src="tailwind/resources/assets/images/img-course.png"
                             alt="Fond vert clair uni"
                         >
-                        <h3>Travailler en équipe</h3>
+                        <h3 class="font-bold text-xl">Travailler en équipe</h3>
                         <p>David Moreau | Expert</p>
-                        <div >
-                            <h5>15,99 €</h5>
-                            <p>60 €</p>
+                        <div class="absolute flex bottom-[38%] right-[5%] bg-yellow-300  p-[1%]  px-[10px] rounded-2xl">
+                            <p class="italic font-semibold pr-[5px]">15,99 €</p>
+                            <p class="line-through text-sm font-light">60 €</p>
                         </div>
-                        <div >
+                        <div  class="flex flex-row max-w-[305px] max-h-[25px]">
                             <img
                                 
                                 src="tailwind/resources/assets/images/star.svg"
@@ -181,18 +172,18 @@
                         </div>
                         <p>Collaborez efficacement, même à distance</p>
                     </div>
-                    <div >
-                        <img
+                    <div class="relative w-[305px] h-[362px] justify-self-center">
+                        <img class="mb-5"
                             src="tailwind/resources/assets/images/img-course.png"
                             alt="Fond vert clair uni"
                         >
-                        <h3>Gérer son temps</h3>
+                        <h3 class="font-bold text-xl">Gérer son temps</h3>
                         <p>Claire Dumas | Coach organisation</p>
-                        <div >
-                            <h5>15,99 €</h5>
-                            <p>60 €</p>
+                        <div class="absolute flex bottom-[38%] right-[5%] bg-yellow-300  p-[1%]  px-[10px] rounded-2xl">
+                            <p class="italic font-semibold pr-[5px]">15,99 €</p>
+                            <p class="line-through text-sm font-light">60 €</p>
                         </div>
-                        <div >
+                        <div  class="flex flex-row max-w-[305px] max-h-[25px]">
                             <img
                                 
                                 src="tailwind/resources/assets/images/star.svg"
@@ -222,26 +213,26 @@
                         <p>Optimisez vos journées et gagnez en efficacité</p>
                     </div>
                 </div>
-                <button >
+                <button class="mt-[5%] p-[1%] px-[2%] cursor-pointer text-white bg-[#152237] border-2 rounded-xl mb-[2%]">
                     Voir plus de formations
                 </button>
             </section>
-            <!-- ----------------------------------------------  RECENT  ---------------------------------------------- -->
-            <section >
-                <h2 >Les formations récentes</h2>
-                <div class="flex bg-[#152237] text-white">
-                    <div >
-                        <img
+
+            <section class="text-center bg-[#152237]">
+                <h2 class="w-[90%] pt-[5%] pb-[5%] justify-self-center font-bold text-4xl underline italic text-white">Les formations récentes</h2>
+                <div class="grid w-[90%] mx-auto gap-3 text-left text-white lg:grid-cols-4 md:grid-cols-2 md:content-center sm:grid-cols-1">
+                    <div class="relative w-[305px] h-[362px] justify-self-center">
+                        <img class="mb-5"
                             src="tailwind/resources/assets/images/img-course.png"
                             alt="Fond vert clair uni"
                         >
-                        <h3>Mieux communiquer</h3>
+                        <h3 class="font-bold text-xl">Mieux communiquer</h3>
                         <p>Julien Martel | Coach en comm.</p>
-                        <div >
-                            <h5>15,99 €</h5>
-                            <p>60 €</p>
+                        <div class="absolute flex bottom-[38%] right-[5%] bg-yellow-600  p-[1%] rounded-2xl">
+                            <p class="italic font-semibold pr-[5px]">15,99 €</p>
+                            <p class="line-through text-sm font-light">60 €</p>
                         </div>
-                        <div >
+                        <div  class="flex flex-row max-w-[305px] max-h-[25px]">
                             <img
                                 
                                 src="tailwind/resources/assets/images/star.svg"
@@ -272,18 +263,18 @@
                             Améliorez vos échanges et votre impact relationnel
                         </p>
                     </div>
-                    <div >
-                        <img
+                    <div class="relative w-[305px] h-[362px] justify-self-center">
+                        <img class="mb-5"
                             src="tailwind/resources/assets/images/img-course.png"
                             alt="Fond vert clair uni"
                         >
-                        <h3>Maîtriser ses émotions</h3>
+                        <h3 class="font-bold text-xl">Maîtriser ses émotions</h3>
                         <p>Amel Benali | Psy. du travail</p>
-                        <div >
-                            <h5>15,99 €</h5>
-                            <p>60 €</p>
+                        <div class="absolute flex bottom-[38%] right-[5%] bg-yellow-600  p-[1%] rounded-2xl">
+                            <p class="italic font-semibold pr-[5px]">15,99 €</p>
+                            <p class="line-through text-sm font-light">60 €</p>
                         </div>
-                        <div >
+                        <div  class="flex flex-row max-w-[305px] max-h-[25px]">
                             <img
                                 
                                 src="tailwind/resources/assets/images/star.svg"
@@ -312,18 +303,18 @@
                         </div>
                         <p>Développez calme et intelligence émotionnelle</p>
                     </div>
-                    <div >
-                        <img
+                    <div class="relative w-[305px] h-[362px] justify-self-center">
+                        <img class="mb-5"
                             src="tailwind/resources/assets/images/img-course.png"
                             alt="Fond vert clair uni"
                         >
-                        <h3>Résoudre les problèmes</h3>
+                        <h3 class="font-bold text-xl">Résoudre les problèmes</h3>
                         <p>Thomas Rivière | Expert</p>
-                        <div >
-                            <h5>15,99 €</h5>
-                            <p>60 €</p>
+                        <div class="absolute flex bottom-[38%] right-[5%] bg-yellow-600  p-[1%] rounded-2xl">
+                            <p class="italic font-semibold pr-[5px]">15,99 €</p>
+                            <p class="line-through text-sm font-light">60 €</p>
                         </div>
-                        <div >
+                        <div  class="flex flex-row max-w-[305px] max-h-[25px]">
                             <img
                                 
                                 src="tailwind/resources/assets/images/star.svg"
@@ -354,18 +345,18 @@
                             Analysez, décidez et trouvez des solutions durables
                         </p>
                     </div>
-                    <div >
-                        <img
+                    <div class="relative w-[305px] h-[362px] justify-self-center">
+                        <img class="mb-5"
                             src="tailwind/resources/assets/images/img-course.png"
                             alt="Fond vert clair uni"
                         >
-                        <h3>Leadership positif</h3>
+                        <h3 class="font-bold text-xl">Leadership positif</h3>
                         <p>Marc Nguyen | Consultant</p>
-                        <div >
-                            <h5>15,99 €</h5>
-                            <p>60 €</p>
+                        <div class="absolute flex bottom-[38%] right-[5%] bg-yellow-600  p-[1%] rounded-2xl">
+                            <p class="italic font-semibold pr-[5px]">15,99 €</p>
+                            <p class="line-through text-sm font-light">60 €</p>
                         </div>
-                        <div >
+                        <div  class="flex flex-row max-w-[305px] max-h-[25px]">
                             <img
                                 
                                 src="tailwind/resources/assets/images/star.svg"
@@ -395,20 +386,20 @@
                         <p>Inspirez, motivez et fédérez votre équipe</p>
                     </div>
                 </div>
-                <button >
+                <button class="mt-[5%] p-[1%] px-[2%] cursor-pointer text-[#152237] bg-white border-2 rounded-xl mb-[2%]">
                     Voir plus de formations
                 </button>
             </section>
             <section >
-                <h2>AVIS CLIENTS</h2>
-                <div >
-                    <div >
-                        <img
+                <h2 class="w-[100%] py-[2%] font-bold text-center text-2xl underline italic">AVIS CLIENTS</h2>
+                <div class="block p-[5%] flex-wrap lg:flex items-right">
+                    <div class="w-[90%] lg:w-[40%] mx-[5%] justify-content-center">
+                        <img class="rounded-[10vh] justify-self-center lg:justify-self-start"
                             src="tailwind/resources/assets/images/juliette.png"
                             alt="Photo de Juliette"
                         >
-                        <h3>Juliette</h3>
-                        <div >
+                        <h3 class="font-bold text-2xl justify-self-center lg:justify-self-start">Juliette</h3>
+                        <div  class="flex flex-row max-w-[305px] max-h-[25px] justify-self-center lg:justify-self-start">
                             <img
                                 
                                 src="tailwind/resources/assets/images/star.svg"
@@ -435,7 +426,7 @@
                                 alt="icone d'étoile"
                             >
                         </div>
-                        <p>
+                        <p class="text-justify">
                             J'ai trouvé le parcours très bien structuré : vidéos
                             courtes, quizzes pertinents et projets pratiques qui
                             m'ont permis d'appliquer immédiatement les notions.
@@ -443,15 +434,14 @@
                             motivante — parfait pour se former en autonomie.
                         </p>
                     </div>
-                    <div >
-                        <img
+                    <div class="w-[90%] lg:w-[40%] mx-[5%] justify-content-center">
+                        <img class="justify-self-center lg:justify-self-start rounded-[10vh]"
                             src="tailwind/resources/assets/images/camille.png"
                             alt="Photo de Camille"
                         >
-                        <h3>Camille</h3>
-                        <div >
+                        <h3 class="font-bold text-2xl justify-self-center lg:justify-self-start">Camille</h3>
+                        <div  class="flex flex-row max-w-[305px] max-h-[25px] justify-self-center lg:justify-self-start">
                             <img
-                                
                                 src="tailwind/resources/assets/images/star.svg"
                                 alt="icone d'étoile"
                             >
@@ -476,7 +466,7 @@
                                 alt="icone d'étoile"
                             >
                         </div>
-                        <p>
+                        <p class="text-justify">
                             Bon équilibre entre théorie et pratique. Les
                             chapitres sont détaillés, et le support et les
                             corrections automatiques ont vraiment aidé. Idéal
@@ -486,32 +476,32 @@
                 </div>
             </section>
             <section>
-                <div class="bg-yellow-400">
-                    <div >
-                        <h2>Les avantages Klivio</h2>
-                        <ul>
-                            <li>
+                <div class="bg-[beige] block lg:flex">
+                    <div class="w-full lg:w-[50%] px-[5%] text-left">
+                        <h2 class="w-[90%] py-[2.5%] lg:py-[5%] px-[3.5%] text-center lg:text-start font-bold text-2xl underline italic">Les avantages Klivio</h2>
+                        <ul class="my-[5%] mx-[3.5%]">
+                            <li class="flex indent-5 py-5 lg:py-2">
                                 <img src="tailwind/resources/assets/images/arrow-up-right.svg" alt="icone de flêche">
                                 <p>Suivi de sa progression</p>
                             </li>
-                            <li>
+                            <li class="flex indent-5 py-5 lg:py-2">
                                 <img src="tailwind/resources/assets/images/edit-01.svg" alt="icone de">
                                 <p>Exercices et QCM pour la mise en pratique</p>
                             </li>
-                            <li>
+                            <li class="flex indent-5 py-5 lg:py-2">
                                 <img src="tailwind/resources/assets/images/download-02.svg" alt="icone téléchargement">
                                 <p>Possibilité de télécharger/imprimer les
                                 formations</p>
                             </li>
-                            <li>
+                            <li class="flex indent-5 py-5 lg:py-2">
                                 <img src="tailwind/resources/assets/images/star-02.svg" alt="icone étoile">
                                 <p>Contenu qualitatif et vérifié</p>
                             </li>
-                            <li>
+                            <li class="flex indent-5 py-5 lg:py-2">
                                 <img src="tailwind/resources/assets/images/clock-backward.svg" alt="icone horloge sens inverse">
                                 <p>Suivi en autonomie, 24h/24, 7j/7</p>
                             </li>
-                            <li>
+                            <li class="flex indent-5 py-5 lg:py-2">
                                 <img src="tailwind/resources/assets/images/annotation-typing.svg" alt="icone bulle tchat">
                                 <p>Espaces d'échanges dédiés pour poser ses
                                 questions sur les formations</p>
@@ -519,43 +509,40 @@
                         </ul>
                     </div>
 
-                    <img
-                        
+                    <img class="h-auto w-[80%] m-auto lg:w-[40%] min-w-[327px] lg:mx-[3.5%] lg:my-[5%]"
                         src="tailwind/resources/assets/images/avantages.png"
-                        alt=""
+                        alt="photo d'une femme sur un ordinateur"
                     >
                 </div>
             </section>
 
             <section>
-                <div class="bg-[#44dd8a]">
-                    <h2 >Créez vos formations</h2>
-
-                    <img
-                        
+                <div class="bg-[#44dd8a] block lg:flex">
+                    <h2 class="lg:hidden w-[90%] py-[2.5%] lg:py-[5%] px-[3.5%] text-center lg:text-start font-bold text-2xl underline italic">Créez vos formations</h2>
+                    <img class="h-auto w-[80%] m-auto lg:w-[40%] min-w-[327px] lg:mx-[3.5%] lg:my-[5%]"
                         src="tailwind/resources/assets/images/become-author.png"
                         alt="Image d'une personne écrivant sur un cahier"
                     >
 
-                    <div >
-                        <h2 >
+                    <div class="w-full lg:w-[50%] px-[5%] ">
+                        <h2 class="hidden lg:block w-[90%] py-[2.5%] lg:py-[5%] px-[3.5%] text-center lg:text-start font-bold text-2xl underline italic">
                             Créez vos formations avec Klivio
                         </h2>
                         <ul>
-                            <li>
+                            <li class="flex indent-5 py-5 lg:py-2">
                                 <img src="tailwind/resources/assets/images/coin-hand.svg" alt="icone de main avec une pièce">
                                 Commission unique, au pourcentage sur les ventes
                             </li>
-                            <li>
+                            <li class="flex indent-5 py-5 lg:py-2">
                                 <img src="tailwind/resources/assets/images/heart.svg" alt="icone de coeur">
                                 Mise en avant sur la plateforme
                             </li>
-                            <li>
+                            <li class="flex indent-5 py-5 lg:py-2">
                                 <img src="tailwind/resources/assets/images/pencil-01.svg" alt="icone de crayon">
                                 Contrôle total sur le cours : contenu, prix
 
                             </li>
-                            <li>
+                            <li class="flex indent-5 py-5 lg:py-2">
                                 <img src="tailwind/resources/assets/images/settings.svg" alt="icone d'engrenage">
                                 Fonctionnalités avancées : espace commentaires,
                                 possibilité de créer des QCM, exercices, vidéos,
@@ -563,7 +550,7 @@
                                 des ventes, gestion de codes promos, gestion de
                                 la facturation, etc
                             </li>
-                            <li>
+                            <li class="flex indent-5 py-5 lg:py-2">
                                 <img src="tailwind/resources/assets/images/user-profile-square.svg" alt="icone de profile">
                                 Le professeur reste 100% propriétaire de sa
                                 formation et conserve tous ses droits d' auteur
@@ -573,40 +560,36 @@
                 </div>
             </section>
             <section>
-                <div >
-                    <div >
-                        <h2>A PROPOS DE KLIVIO</h2>
-                        <p>
-                            Chez Klivio, nous défendons des valeurs
-                            fondamentales qui définissent notre approche
-                            éducative. Nous nous engageons à assurer une
-                            rémunération équitable pour les créateurs de
-                            contenu, reconnaissant la qualité de leur travail.
-                        </p>
-                        <br >
-                        <p>
-                            Favorisant l'autonomie d'apprentissage, notre
-                            plateforme offre la flexibilité nécessaire pour
-                            explorer divers sujets. La transparence est au cœur
-                            de notre démarche, garantissant une clarté totale
-                            sur les formations que les instructeurs proposent.
-                            Ensemble, ces valeurs forment le socle d'une
-                            éducation enrichissante et équitable, guidant notre
-                            mission d'offrir des opportunités d'apprentissage de
-                            qualité.
-                        </p>
-                    </div>
-                    <div >
-                        <img
-                            src="tailwind/resources/assets/images/logo.png"
-                            alt="logo Klivio"
-                        >
-                    </div>
+            <div class="inline lg:grid lg:grid-cols-2 items-center bg-dark">
+                <div class="justify-self-center bg-[#f5f5f5] px-[5%] py-[20%]">
+                <h2 class="font-extrabold">A PROPOS DE KLIVIO</h2>
+                <p>
+                    Chez Klivio, nous défendons des valeurs fondamentales qui définissent
+                    notre approche éducative. Nous nous engageons à assurer une
+                    rémunération équitable pour les créateurs de contenu, reconnaissant la
+                    qualité de leur travail.
+                </p>
+                <p>
+                    Favorisant l'autonomie d'apprentissage, notre plateforme offre la
+                    flexibilité nécessaire pour explorer divers sujets. La transparence est
+                    au cœur de notre démarche, garantissant une clarté totale sur les
+                    formations que les instructeurs proposent. Ensemble, ces valeurs forment
+                    le socle d'une éducation enrichissante et équitable, guidant notre
+                    mission d'offrir des opportunités d'apprentissage de qualité.
+                </p>
                 </div>
+                <div class="py-[20%] lg:h-full justify-self-center bg-dark grid place-items-center bg-[#152237] w-full">
+                <img
+                    src="tailwind/resources/assets/images/logo.png"
+                    alt="logo Klivio"
+                >
+                </div>
+            </div>
             </section>
+
             <section>
                 <div >
-                    <h2>NOUS CONTACTER</h2>
+                    <h2 class="w-[100%] pl-[5%] justify-self-start font-bold text-2xl underline italic">NOUS CONTACTER</h2>
                     <div ></div>
                     <form >
                         <input
@@ -628,37 +611,37 @@
                             name="message"
                             placeholder="   Votre message"
                         ></textarea>
-                        <input type="submit"  >
+                        <input type="submit">
                     </form>
                 </div>
             </section>
         </main>
-        <footer>
-            <div ></div>
 
-            <div >
+        <footer class="bg-[#152237] text-white text-left">
+            <div class="pb-[5%]"></div>
+            <div class="block lg:flex flex-wrap">
                 <img
-                    
+                    class="w-[40%] m-auto pb-[5%] lg:w-[20%] lg:m-[5%] lg:mr-[20%]"
                     src="tailwind/resources/assets/images/logo.png"
                     width="243"
                     height="47"
                     alt="logo Klivio"
                 >
 
-                <div >
-                    <h4>Mentions légales</h4>
+                <div class="flex flex-col mr-[5%]">
+                    <h3>Mentions légales</h3>
                     <ul>
-                        <li>CGU</li>
-                        <li>CGV</li>
-                        <li>FAQ</li>
-                        <li>Contact</li>
+                        <li class="flex indent-5 py-5 lg:py-2">CGU</li>
+                        <li class="flex indent-5 py-5 lg:py-2">CGV</li>
+                        <li class="flex indent-5 py-5 lg:py-2">FAQ</li>
+                        <li class="flex indent-5 py-5 lg:py-2">Contact</li>
                     </ul>
                 </div>
 
-                <div >
-                    <h4>Coordonées</h4>
+                <div class="flex flex-row">
+                    <h3>Coordonées</h3>
                     <ul>
-                        <li>
+                        <li class="flex indent-5 py-5 lg:py-2">
                             <img
                                 
                                 src="tailwind/resources/assets/images/location-dot-solid.svg"
@@ -670,7 +653,7 @@
                                 75003 Paris
                             </p>
                         </li>
-                        <li>
+                        <li class="flex indent-5 py-5 lg:py-2">
                             <img
                                 src="tailwind/resources/assets/images/phone-solid.svg"
                                 alt="icone de telephone"
@@ -678,7 +661,7 @@
                             >
                             01.02.03.04.05
                         </li>
-                        <li>
+                        <li class="flex indent-5 py-5 lg:py-2">
                             <img
                                 src="tailwind/resources/assets/images/envelope-regular.svg"
                                 alt="icone d'enveloppe"
@@ -689,41 +672,37 @@
                     </ul>
                 </div>
 
-                <div >
-                    <button >
-                        Connexion
-                    </button>
-                    <button >
-                        Inscription
-                    </button>
+                <div class="hidden lg:flex flex-col">
+                   <button class="h-[40px] w-[130px] rounded-[7px] cursor-pointer bg-white text-black h-[40%]">Connexion</button>
+                    <button class="h-[40px] w-[130px] rounded-[7px] cursor-pointer bg-white text-black h-[40%]">Inscription</button>
                 </div>
             </div>
             <div ></div>
 
-            <div >
+            <div class="hidden lg:flex">
                 <p>©Klivio - 2025</p>
                 <div >
                     <p>Suivez-nous</p>
                     <ul>
-                        <li>
+                        <li class="flex indent-5 py-5 lg:py-2">
                             <img
                                 src="tailwind/resources/assets/images/facebook.svg"
                                 alt="facebook logo"
                             >
                         </li>
-                        <li>
+                        <li class="flex indent-5 py-5 lg:py-2">
                             <img
                                 src="tailwind/resources/assets/images/X.svg"
                                 alt="X logo"
                             >
                         </li>
-                        <li>
+                        <li class="flex indent-5 py-5 lg:py-2">
                             <img
                                 src="tailwind/resources/assets/images/instagram.svg"
                                 alt="Instgram logo"
                             >
                         </li>
-                        <li>
+                        <li class="flex indent-5 py-5 lg:py-2">
                             <img
                                 src="tailwind/resources/assets/images/linkedIn.svg"
                                 alt="LinkedIn logo"
